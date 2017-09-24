@@ -268,6 +268,152 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://zrc-struggling.github.io/2017/09/24/正向代理与反向代理浅总结/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="ZRC-Struggling">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/zrcStrugglingPic.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="人生还有多少个二十年">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/09/24/正向代理与反向代理浅总结/" itemprop="url">正向代理与反向代理浅总结</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-24T11:58:38+08:00">
+                2017-09-24
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/网络/" itemprop="url" rel="index">
+                    <span itemprop="name">网络</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <p>No description provided.<br>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/09/24/正向代理与反向代理浅总结/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://zrc-struggling.github.io/2017/09/18/个人博客搭建历程/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -360,149 +506,14 @@
 
       
         
-          
-            <h3 id="基础环境搭建"><a href="#基础环境搭建" class="headerlink" title="基础环境搭建"></a>基础环境搭建</h3><h4 id="安装Node-js"><a href="#安装Node-js" class="headerlink" title="安装Node.js"></a>安装<a href="https://nodejs.org/en/download/" target="_blank" rel="external">Node.js</a></h4><h4 id="安装Git"><a href="#安装Git" class="headerlink" title="安装Git"></a>安装<a href="https://git-scm.com/download/win" target="_blank" rel="external">Git</a></h4><h3 id="本地博客搭建-hexo-v3-3-9-os-win7"><a href="#本地博客搭建-hexo-v3-3-9-os-win7" class="headerlink" title="本地博客搭建(hexo: v3.3.9, os: win7)"></a>本地博客搭建(hexo: v3.3.9, os: win7)</h3><p>打开git bash，依次输入以下指令：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">1. npm install hexo-cli -g // 安装hexo命令行工具</div><div class="line">2. hexo init E:/githubBlog // 在E盘下创建githubBlog文件夹，并用hexo初始化</div><div class="line">3. cd E:/githubBlog // 将路径切换至githubBlog文件夹</div><div class="line">4. npm install // 安装依赖（其实第二步中的初始化过程已经包含了这一步）</div><div class="line">5. hexo server // 启动本地服务器</div></pre></td></tr></table></figure></p>
-<p>至此，本地的博客站点已经搭建完成，可以在地址栏中输入”localhost:4000”进行访问。<br>githubBlog文件夹的目录结构如下所示：<br><img src="http://upload-images.jianshu.io/upload_images/3982540-06db293392cea747.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="初始目录结构.JPG"><br>目录解析：</p>
-<ul>
-<li>node_modules文件夹存放相关的依赖。</li>
-<li>scaffolds文件夹存放模板文件。（新建文章时，Hexo会根据它来建立文件。）</li>
-<li>source文件夹存放资源文件。(资源文件夹是存放用户资源的地方。除 <em>posts 文件夹之外，开头命名为 </em> (下划线)的文件 / 文件夹和隐藏的文件将会被忽略。Markdown 和 HTML 文件会被解析并放到 public 文件夹，而其他文件会被拷贝过去。)</li>
-<li>themes文件夹存放主题文件。(Hexo 会根据主题来生成静态页面。)</li>
-<li>.gitignore文件记录不需要进行版本管理的文件。(被忽略的文件通常有几类：操作系统自动生成的文件，编译生成的中间文件、可执行文件，带有个人敏感信息的配置文件)</li>
-<li>_config.yml文件记录网站的配置信息</li>
-<li>db.json文件用于生成缓存文件</li>
-<li>package.json文件记录应用程序的信息</li>
-</ul>
-<h3 id="部署环境搭建"><a href="#部署环境搭建" class="headerlink" title="部署环境搭建"></a>部署环境搭建</h3><h4 id="安装hexo-deployer-git"><a href="#安装hexo-deployer-git" class="headerlink" title="安装hexo-deployer-git"></a>安装<a href="https://github.com/hexojs/hexo-deployer-git" target="_blank" rel="external">hexo-deployer-git</a></h4><p>使用git bash输入以下指令：<code>npm install hexo-deployer-git --save</code></p>
-<h4 id="创建github仓库"><a href="#创建github仓库" class="headerlink" title="创建github仓库"></a>创建<a href="https://github.com/" target="_blank" rel="external">github仓库</a></h4><p>在GitHub个人账号上创建一个新仓库，仓库必须命名为username.github.io（username指的是你的用户名）</p>
-<h4 id="配置-config-yml文件"><a href="#配置-config-yml文件" class="headerlink" title="配置_config.yml文件"></a>配置_config.yml文件</h4><p>在_config.yml文件最后的几行代码改为：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">  type: git</div><div class="line">  repo: &lt;repository url&gt;</div></pre></td></tr></table></figure></p>
-<p><code>repository url</code>指的是上一步中创建的github仓库的地址，例如，我个人的配置如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">  type: git</div><div class="line">  repo: https://github.com/ZRC-Struggling/zrc-struggling.github.io.git</div></pre></td></tr></table></figure></p>
-<p>至此，部署环境已经搭建完毕，接下要开始写博客了。</p>
-<h3 id="写博客"><a href="#写博客" class="headerlink" title="写博客"></a>写博客</h3><h4 id="具体流程如下："><a href="#具体流程如下：" class="headerlink" title="具体流程如下："></a>具体流程如下：</h4><ol>
-<li>创建草稿(hexo new draft 第一篇文章)</li>
-<li>打开“第一篇文章.md”，开始写写写…</li>
-<li>启动本地服务，预览(hexo server –draft) </li>
-<li>符合要求，发布草稿(hexo publish 第一篇文章)</li>
-<li>生成静态文件(hexo generate)</li>
-<li>部署到线上去(hexo deploy)</li>
-</ol>
-<h4 id="快捷流程如下："><a href="#快捷流程如下：" class="headerlink" title="快捷流程如下："></a>快捷流程如下：</h4><ol>
-<li>hexo n 第二篇文章</li>
-<li>打开“第二篇文章.md”，写写写…</li>
-<li>hexo s -o</li>
-<li>hexo g</li>
-<li>hexo d</li>
-</ol>
-<h4 id="快快捷流程如下："><a href="#快快捷流程如下：" class="headerlink" title="快快捷流程如下："></a>快快捷流程如下：</h4><p>将写好的文件放到_post文件夹下 -&gt; hexo g -&gt; hexo d（<strong>OK了</strong>）<br>至此，写博客之旅已经可以开始了…具体的语法细节多看官网跟其github仓库就行了, 文末附有几个有用的链接。</p>
-<h3 id="常见问题解答方案"><a href="#常见问题解答方案" class="headerlink" title="常见问题解答方案"></a>常见问题解答方案</h3><ol>
-<li>Q: 输入hexo server后在4000端口并没有显示网页。有时会循环打印HEART，这是怎么回事？<br>A: 该端口被占用了。可以通过<code>hexo server --port portname</code>或者<code>hexo s -p portname</code>来修改端口号，例如’hexo s -p 5001’。</li>
-<li>Q: 为什么安装好Hexo后source下只有_posts目录？没有_drafts.<br>A: 默认生成的source文件夹是没有_posts目录的。当使用<code>hexo new draft somepost</code>后，就会在source文件夹下自动创建_drafts目录，并在该目录下生成<code>somepost.md</code>文件</li>
-<li>Q: 显示草稿：hexo –draft 为什么执行不了？<br>A: 配置文件_config.yml中，默认将<code>render_drafts</code>设为了<code>false</code>，即在站点中不显示草稿。为了预览草稿的效果，可以使用<code>hexo server --draft</code>来启动本地站点，这样草稿就可以在本地预览了。当然，也可以直接将配置文件中的<code>render_drafts</code>设置为<code>true</code>，不过这样做的话，草稿状态意义就不大了。</li>
-</ol>
-<h3 id="附录"><a href="#附录" class="headerlink" title="附录"></a>附录</h3><h4 id="Hexo的命令行用法："><a href="#Hexo的命令行用法：" class="headerlink" title="Hexo的命令行用法："></a>Hexo的命令行用法：</h4><p>Usage: <code>hexo &lt;command&gt;</code></p>
-<table>
-<thead>
-<tr>
-<th>命令</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>clean</td>
-<td>Remove generated files and cache</td>
-</tr>
-<tr>
-<td>config</td>
-<td>Get or set configurations</td>
-</tr>
-<tr>
-<td>deploy</td>
-<td>Deploy your website</td>
-</tr>
-<tr>
-<td>generate</td>
-<td>Generate static files</td>
-</tr>
-<tr>
-<td>help</td>
-<td>Get help on a command</td>
-</tr>
-<tr>
-<td>init</td>
-<td>Create a new Hexo folder</td>
-</tr>
-<tr>
-<td>list</td>
-<td>List the information of the site</td>
-</tr>
-<tr>
-<td>migrate</td>
-<td>Migrate your site from other system to Hexo</td>
-</tr>
-<tr>
-<td>new</td>
-<td>Create a new post</td>
-</tr>
-<tr>
-<td>publish</td>
-<td>Move a draft post from _drafts to _posts folder</td>
-</tr>
-<tr>
-<td>render</td>
-<td>Render files with renderer plugins</td>
-</tr>
-<tr>
-<td>server</td>
-<td>Start the server</td>
-</tr>
-<tr>
-<td>version</td>
-<td>Display version information</td>
-</tr>
-</tbody>
-</table>
-<table>
-<thead>
-<tr>
-<th>全局配置</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>–config</td>
-<td>Specify config file instead of using _config.yml</td>
-</tr>
-<tr>
-<td>–cwd</td>
-<td>Specify the CWD</td>
-</tr>
-<tr>
-<td>–debug</td>
-<td>Display all verbose messages in the terminal</td>
-</tr>
-<tr>
-<td>–draft</td>
-<td>Display draft posts</td>
-</tr>
-<tr>
-<td>–safe</td>
-<td>Disable all plugins and scripts</td>
-</tr>
-<tr>
-<td>–silent</td>
-<td>Hide output on console</td>
-</tr>
-</tbody>
-</table>
-<h3 id="参考文档"><a href="#参考文档" class="headerlink" title="参考文档"></a>参考文档</h3><ul>
-<li><a href="https://hexo.io/" target="_blank" rel="external">https://hexo.io/</a></li>
-<li><a href="https://github.com/hexojs/hexo" target="_blank" rel="external">https://github.com/hexojs/hexo</a></li>
-<li><a href="http://www.jianshu.com/p/701b1095da11" target="_blank" rel="external">http://www.jianshu.com/p/701b1095da11</a></li>
-</ul>
-
-          
+          <p>No description provided.<br>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/09/18/个人博客搭建历程/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -610,6 +621,17 @@
 
                 
                 
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/前端开发/JS/" itemprop="url" rel="index">
+                    <span itemprop="name">JS</span>
+                  </a>
+                </span>
+
+                
+                
               
             </span>
           
@@ -641,61 +663,14 @@
 
       
         
-          
-            <blockquote>
-<p>版权声明：文章首发于本人简书账号<a href="http://www.jianshu.com/u/ef9fd7798cae" target="_blank" rel="external">人生还有多少个二十年</a><br>欢迎转载，转载请注明出处</p>
-</blockquote>
-<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>　　数组是编程语言中最为常见的数据类型之一，跟对象相比，它的突出特点是“<strong>有序</strong>”。JS的数组还有一些其它的特点，比如，数组项的类型可以不一致，数组的大小可以动态调整，没有数组下标越界的概念。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">// 一个数组，可以同时包含各种数据类型的数据，而且，数组之中还可以嵌套数组</div><div class="line">var arr = [1, &quot;2&quot;, true, null, undefined, [&#123;a:1,b:2,c:3&#125;]];</div><div class="line">arr.length; // 6</div><div class="line">// 不会越界报错，而是在指定索引处创建新元素，并自动更新数组的length属性值。</div><div class="line">arr[100] = 100; </div><div class="line">arr.length; // 101</div><div class="line">// 数组的length属性是可读可写，把其值调低，则会删除部分元素</div><div class="line">// 调高，则生成稀疏数组</div><div class="line">arr.length = 6;</div><div class="line">arr; // [1, &quot;2&quot;, true, null, undefined, [&#123;a:1,b:2,c:3&#125;]]</div><div class="line">arr.length = 10;</div><div class="line">arr[7]; // undefined</div></pre></td></tr></table></figure></p>
-<h3 id="数组的常用方法"><a href="#数组的常用方法" class="headerlink" title="数组的常用方法"></a>数组的常用方法</h3><p>接下来，以例子为主，解释为辅，讲解相关知识，欲知详情，请参阅文末“参考资源”</p>
-<h4 id="1-增删元素（push-、pop-、unshift-、shift-）"><a href="#1-增删元素（push-、pop-、unshift-、shift-）" class="headerlink" title="1. 增删元素（push()、pop()、unshift()、shift()）"></a>1. 增删元素（push()、pop()、unshift()、shift()）</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">var arr = [];</div><div class="line">arr.push(&quot;a&quot;, &quot;b&quot;); // 2</div><div class="line">arr // [&quot;a&quot;, &quot;b&quot;]</div><div class="line">arr.pop(); // &quot;b&quot;</div><div class="line">arr // [&quot;a&quot;]</div><div class="line">arr.unshift(&quot;x&quot;, &quot;y&quot;); // 3</div><div class="line">arr // [&quot;x&quot;, &quot;y&quot;, &quot;a&quot;]</div><div class="line">arr.shift(); // &quot;x&quot;</div><div class="line">arr // [&quot;y&quot;, &quot;a&quot;]</div></pre></td></tr></table></figure>
-<ul>
-<li>push()和unshift()都是向数组添加元素，可以同时添加多个元素，它们的返回值都是更新后的数组的长度；</li>
-<li>pop()和shift()都是从数组中移除元素，只移除一项，它们的返回值都是被移除的那个元素；</li>
-<li>push()和pop()的操作发生在数组尾部，unshift()和shift()的操作发生在数组头部；</li>
-<li>栈数据结构的访问规则是LIFO（后进先出），插入和删除的操作发生在同一端；而队列的访问规则为FIFO（先进先出），插入和删除的操作不在同一端；</li>
-<li>push()配合pop()可以模拟栈的行为；shift()和push()、unshift()和pop()都可以实现类似队列的行为。</li>
-</ul>
-<h4 id="2-重排序（reverse-、sort-）"><a href="#2-重排序（reverse-、sort-）" class="headerlink" title="2. 重排序（reverse()、sort()）"></a>2. 重排序（reverse()、sort()）</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">var arr1 = [1, 2, 3];</div><div class="line">arr1.reverse(); // [3, 2, 1]</div><div class="line">arr1; // [3, 2, 1]</div><div class="line"></div><div class="line">var arr2 = [1, 3, 2];</div><div class="line">arr2.sort(); // [1, 2, 3]</div><div class="line">arr2; // [1, 2, 3]</div></pre></td></tr></table></figure>
-<ul>
-<li>从上面可以看出，reverse()和sort()都会改变原数组，并且它们的返回值都是排序之后的数组。reverse()用于反转数组的顺序。</li>
-<li>sort()用于以升序或者降序的方式排列数组项。</li>
-</ul>
-<blockquote>
-<p>为了实现排序，sort()方法会调用每个数组项的toString()转型方法，然后比较得到的字符串，以确定如何排序。即使数组中的每一项都是数值，sort()方法比较的也是字符串。</p>
-</blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">var arr3 = [1, 2, 10];</div><div class="line">arr3.sort(); // [1, 10, 2]</div><div class="line">var arr4 = [&quot;a&quot;, &quot;c&quot;, &quot;b&quot;, &quot;B&quot;];</div><div class="line">arr4.sort(); // [&quot;B&quot;, &quot;a&quot;, &quot;b&quot;, &quot;c&quot;]</div></pre></td></tr></table></figure>
-<p>sort()可以接收一个函数，用于提供更实用的排序功能。<br>格式如下：sort(fn(arg1, arg2))<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">var arr5 = [1, 3, 2];</div><div class="line">// 升序排列</div><div class="line">arr5.sort(function(a, b)&#123;</div><div class="line">	return a - b;</div><div class="line">&#125;); // [1, 2, 3]</div><div class="line">arr5 //  [1, 2, 3]</div><div class="line">// 降序排列</div><div class="line">arr5.sort(function(a, b)&#123;</div><div class="line">	return b - a;</div><div class="line">&#125;); // [3, 2, 1]</div></pre></td></tr></table></figure></p>
-<h4 id="3-操作方法（concat-、slice-、splice-）"><a href="#3-操作方法（concat-、slice-、splice-）" class="headerlink" title="3. 操作方法（concat()、slice()、splice()）"></a>3. 操作方法（concat()、slice()、splice()）</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">// concat()：用于合并多个数组，生成新数组，对原数组没有影响</div><div class="line">// 数组合并过程中，各数组只拆除最外层的“[]”，合并操作并不是递归的</div><div class="line">// 这表明，生成的新数组仍然可以含有数组</div><div class="line">var arr1 = [];</div><div class="line">arr1.concat([1], [2], [[3,4], [5, 6]]); // [1, 2, [3, 4], [5, 6]];</div><div class="line">arr1; // []</div></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">// slice(): 用于截取子数组，且操作并不影响生成的数组</div><div class="line">// 可以给定两个参数，一个是起始索引，一个是结束索引</div><div class="line">var arr2 = [&quot;a&quot;, &quot;b&quot;, &quot;c&quot;, &quot;d&quot;];</div><div class="line">// 没给定参数，相当于复制数组</div><div class="line">arr2.slice(); // [&quot;a&quot;, &quot;b&quot;, &quot;c&quot;, &quot;d&quot;]</div><div class="line">arr2 // [&quot;a&quot;, &quot;b&quot;, &quot;c&quot;, &quot;d&quot;]</div><div class="line">// 只给定起始索引，默认从该索引处一直截取到末尾</div><div class="line">arr2.slice(2); //  [&quot;c&quot;, &quot;d&quot;]</div><div class="line">arr2 // [&quot;a&quot;, &quot;b&quot;, &quot;c&quot;, &quot;d&quot;]</div><div class="line">// 记清楚了！从起始索引截取到结束索引之前，并不包含结束索引处的元素</div><div class="line">arr2.slice(1, 3); // [&quot;b&quot;, &quot;c&quot;]</div><div class="line">arr2 //  [&quot;a&quot;, &quot;b&quot;, &quot;c&quot;, &quot;d&quot;]</div></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">// splice(): 增、删、替换数组元素，直接修改原数组</div><div class="line">// 该操作的返回值是被删除的元素组成的数组</div><div class="line">var arr3 = [&quot;1&quot;, &quot;2&quot;, &quot;3&quot;, &quot;a&quot;, &quot;b&quot;, &quot;c&quot;];</div><div class="line">// 从索引为4处开始删除元素，一直到数组末尾</div><div class="line">arr3.splice(4); // [&quot;b&quot;, &quot;c&quot;]</div><div class="line">arr3 // [&quot;1&quot;, &quot;2&quot;, &quot;3&quot;, &quot;a&quot;]</div><div class="line">// 从索引为0处开始，删除2个元素</div><div class="line">arr3.splice(0, 2); // [&quot;1&quot;, &quot;2&quot;]</div><div class="line">arr3 // [&quot;3&quot;, &quot;a&quot;]</div><div class="line">// 从索引为0处开始，删除0个元素，并在该处插入1个元素&quot;x&quot;</div><div class="line">arr3.splice(0, 0, &quot;x&quot;); // []</div><div class="line">arr3 // [&quot;x&quot;, &quot;3&quot;, &quot;a&quot;]</div><div class="line">// 删除几个元素，就插入几个元素，可以实现splice()替换元素功能</div><div class="line">arr3.splice(0, 1, &quot;y&quot;); // [&quot;x&quot;]</div><div class="line">arr3 // [&quot;y&quot;, &quot;3&quot;, &quot;a&quot;]</div></pre></td></tr></table></figure>
-<h4 id="4-位置方法"><a href="#4-位置方法" class="headerlink" title="4. 位置方法"></a>4. 位置方法</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">// indexOf()和lastIndexOf()都可以用于查询指定元素在数组中的位置,</div><div class="line">// 返回第一个匹配的元素的索引。</div><div class="line">// 两者的区别在于，前者是从数组头部开始查找，后者则从尾部开始查找</div><div class="line">[1,2,4,-1,2].indexOf(2) // 1</div><div class="line">[1,2,4,-1,2].lastIndexOf(2) // 4</div></pre></td></tr></table></figure>
-<h4 id="5-迭代方法（every-、some-、filter-、map-、forEach-）"><a href="#5-迭代方法（every-、some-、filter-、map-、forEach-）" class="headerlink" title="5. 迭代方法（every()、some()、filter()、map()、forEach()）"></a>5. 迭代方法（every()、some()、filter()、map()、forEach()）</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">[1,2,3].every(function(item, index, array)&#123;return item &gt; 0;&#125;);</div><div class="line">// true</div><div class="line">[1,2,3].every(function(item, index, array)&#123;return item &gt; 2;&#125;);</div><div class="line">// false</div><div class="line">[1,2,3].some(function(item, index, array)&#123;return item &gt; 2;&#125;);</div><div class="line">// true</div><div class="line">[1,2,3].filter(function(item, index, array)&#123;return item &gt; 2;&#125;);</div><div class="line">// [3]</div><div class="line">[1,2,3].map(function(item, index, array)&#123;	return item * 2;&#125;);</div><div class="line">// [2, 4, 6]</div><div class="line">var sum = 0;</div><div class="line">[1,2,3].forEach(function(item, index, array)&#123;sum += item;&#125;);</div><div class="line">sum // 6</div></pre></td></tr></table></figure>
-<p>这五个迭代方法都接收一个函数，并且对数组中的每一项都运行给定函数，这些迭代方法都不会改变原数组。它们的返回值如下：</p>
-<blockquote>
-<ul>
-<li>every()：给定函数对每一项都返回true，则返回true。</li>
-<li>some()：给定函数对任一项返回true，则返回true。</li>
-<li>filter()：返回该函数会返回true的项组成的数组。</li>
-<li>map()：返回每次函数调用的结果组成的数组。</li>
-<li>forEach()：没有返回值。</li>
-</ul>
-</blockquote>
-<h4 id="6-归并方法（reduce-、reduceRight-）"><a href="#6-归并方法（reduce-、reduceRight-）" class="headerlink" title="6. 归并方法（reduce()、reduceRight()）"></a>6. 归并方法（reduce()、reduceRight()）</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">[1,2,3].reduce(function(prev, cur)&#123;return prev + cur&#125;);</div><div class="line">// 6</div><div class="line">[1,2,3].reduceRight(function(prev, cur)&#123;return prev + cur&#125;);</div><div class="line">// 6</div></pre></td></tr></table></figure>
-<blockquote>
-<p>reduce()和reduceRight()这两个方法都会迭代数组的所有项，然后构建一个最终返回的值。前者的迭代顺序是从前往后，后者则相反</p>
-</blockquote>
-<h3 id="Attentions"><a href="#Attentions" class="headerlink" title="Attentions"></a>Attentions</h3><ol>
-<li>了解各个数组方法的功能，是否有返回值，返回值是什么，是否对原数组造成影响。</li>
-<li>位置方法、迭代方法和归并方法都是ES5的标准。IE兼容性：IE9+。</li>
-</ol>
-<hr>
-<h3 id="参考资源"><a href="#参考资源" class="headerlink" title="参考资源"></a>参考资源</h3><ul>
-<li>《JavaScript高级程序设计（第3版）》</li>
-<li>《JavaScript权威指南》</li>
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array" target="_blank" rel="external">MDN</a></li>
-</ul>
-
-          
+          <p>No description provided.<br>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/08/19/JS数组知多少/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -803,6 +778,17 @@
 
                 
                 
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/前端开发/jQuery/" itemprop="url" rel="index">
+                    <span itemprop="name">jQuery</span>
+                  </a>
+                </span>
+
+                
+                
               
             </span>
           
@@ -834,24 +820,14 @@
 
       
         
-          
-            <blockquote>
-<p>版权声明，文章首发于本人慕课网账号：<a href="http://www.imooc.com/u/2529192/articles" target="_blank" rel="external">人生还有多少个二十年</a>，欢迎转载，转载请注明出处</p>
-</blockquote>
-<p>说明：本文涉及的内容多，为保持整体脉络的清晰，对个别疑难点将另附链接，并不定期对文章的错漏之处进行修正…</p>
-<h3 id="创建节点"><a href="#创建节点" class="headerlink" title="创建节点"></a>创建节点</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">eg: </div><div class="line">// 用三种方式创建三个段落（包括标签节点、属性节点和文本节点）并添加到文档中去</div><div class="line">$(&quot;&lt;p&gt;&lt;/p&gt;&quot;).attr(&#123;title:&quot;p1&quot;,id:&quot;p1&quot;&#125;).html(&quot;这是第一个段落&quot;).appendTo(&quot;body&quot;);</div><div class="line">$(&quot;&lt;p&gt;&lt;/p&gt;&quot;,&#123;title:&quot;p2&quot;,id:&quot;p2&quot;&#125;).html(&quot;这是第二个段落&quot;).appendTo(&quot;body&quot;);</div><div class="line">$(&quot;&lt;p title=&apos;p3&apos; id=&apos;p3&apos;&gt;这是第三个段落&lt;/p&gt;&quot;).appendTo(&quot;body&quot;);</div></pre></td></tr></table></figure>
-<h3 id="查找节点"><a href="#查找节点" class="headerlink" title="查找节点"></a>查找节点</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">eg:	</div><div class="line">// 采用上面已经创建的节点，下面进行查找标签节点、属性节点和文本节点的操作</div><div class="line">var p1 = $(&quot;p:first&quot;); // 获取第一个段落节点</div><div class="line">console.log(p1); // 打印标签节点 result: Object[p#p1]</div><div class="line">console.log(p1.attr(&quot;title&quot;)); // 打印属性节点  result: p1</div><div class="line">console.log(p1.text()); // 打印文本节点  result: 这是第一个段落</div></pre></td></tr></table></figure>
-<h3 id="插入节点"><a href="#插入节点" class="headerlink" title="插入节点"></a>插入节点</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">1.   $(target).append(content)/$(content).appendTo(target) - 在被选元素的内部的结尾插入内容</div><div class="line">     $(target).prepend(content)/$(content).prependTo(target) - 在被选元素的内部的开头插入内容</div><div class="line">     $(target).after(content)/$(content).insertAfter(target) - 在被选元的素外部之后插入内容</div><div class="line">     $(target).before(content)/$(content).insertBefore(target) - 在被选元素的外部之前插入内容 </div><div class="line"></div><div class="line">    详情请看：《一眼看破插入节点的8个方法》    http://www.imooc.com/article/12047</div></pre></td></tr></table></figure>
-<h3 id="替换节点"><a href="#替换节点" class="headerlink" title="替换节点"></a>替换节点</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">1.$(target).replaceWith(content)/$(content).replaceAll(target)-将目标元素替换为内容</div><div class="line">    eg:	</div><div class="line">        $(&quot;&lt;ul&gt;&lt;li&gt;html&lt;/li&gt;&lt;li&gt;css&lt;/li&gt;&lt;/ul&gt;&quot;).appendTo(&quot;body&quot;);</div><div class="line">        console.log($(&quot;ul&quot;).html());		//result:	&lt;li&gt;html&lt;/li&gt;&lt;li&gt;css&lt;/li&gt;</div><div class="line">        $(&quot;&lt;li&gt;html5&lt;/li&gt;&quot;).replaceAll($(&quot;ul li:eq(0)&quot;));</div><div class="line">        console.log($(&quot;ul&quot;).html());		//result: &lt;li&gt;html5&lt;/li&gt;&lt;li&gt;css&lt;/li&gt;</div><div class="line">        $(&quot;ul li:eq(1)&quot;).replaceWith(&quot;&lt;li&gt;css3&lt;/li&gt;&quot;);</div><div class="line">        console.log($(&quot;ul&quot;).html());		//result: &lt;li&gt;html5&lt;/li&gt;&lt;li&gt;css3&lt;/li&gt;	</div><div class="line">2.如果替换之前，已经为元素绑定事件，替换后原先绑定的事件将会与被替换的元素一起消失，需要在新元素上重新绑定事件</div></pre></td></tr></table></figure>
-<h3 id="复制节点"><a href="#复制节点" class="headerlink" title="复制节点"></a>复制节点</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">eg: $(this).clone();		//仅复制节点，不复制元素所绑定的事件</div><div class="line">    $(this).clone(true);	//既复制节点，也复制元素所绑定的事件</div><div class="line">    如果不理解上面的两句话，自己打一下下面的具体代码，运行一次，应该就能明白了:</div><div class="line">    1)html代码：</div><div class="line">        &lt;input type=&quot;button&quot; value=&quot;复制节点&quot;&gt;</div><div class="line">        &lt;input type=&quot;button&quot; value=&quot;复制节点,同时复制节点的行为&quot;&gt;</div><div class="line">	2）引入jQuery库（根据自己的情况自行引入）</div><div class="line">    3）script代码：</div><div class="line">        $(function()&#123;</div><div class="line">            $(&quot;input:eq(0)&quot;).click(function()&#123;</div><div class="line">                $(this).clone().appendTo(&quot;body&quot;);</div><div class="line">                &#125;);</div><div class="line">            $(&quot;input:eq(1)&quot;).click(function()&#123;</div><div class="line">                $(this).clone(true).appendTo(&quot;body&quot;);</div><div class="line">                &#125;);</div><div class="line">            &#125;);</div></pre></td></tr></table></figure>
-<h3 id="删除节点"><a href="#删除节点" class="headerlink" title="删除节点"></a>删除节点</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">$(element).remove()返回值是一个指向删除的节点的引用，因此可以在以后再使用这些元素，但是它绑定的事件、附加的数据无法再次使用了</div><div class="line">$(element).detach()使用之后，重新追加该元素，所有绑定的事件、附加的数据都能够使用</div><div class="line">$(element).empty()严格来说并不是删除节点，而是清空节点，它能清空元素中的所有后代节点</div><div class="line">   eg://下面两个例子意在解释empty()</div><div class="line">      1）$(&quot;&lt;div&gt;&lt;p&gt;&lt;span&gt;人生有多少个二十年&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&quot;).appendTo(&quot;body&quot;);</div><div class="line">        console.log($(&quot;div&quot;).html());		//result:	&lt;p&gt;&lt;span&gt;人生有多少个二十年&lt;/span&gt;&lt;/p&gt;</div><div class="line">        $(&quot;p&quot;).empty();</div><div class="line">        console.log($(&quot;div&quot;).html());		//result:	&lt;p&gt;&lt;/p&gt;</div><div class="line">      2）$(element).empty()类比：</div><div class="line">      	你可以把element看做电脑的回收站，把$(element).empty()看做是清空回收站的操作，把包含在element中的标签节点看做回收站中的文件夹，把包含在element中的文本节点看做是回收站中的文件，而清空回收站就是把回收站里的所有文件夹和文件都彻底删除，并且回收站自身并不会被删除，这就类似于清空节点，该操作把某节点里的所有后代标签节点包括文本节点都彻底删除，但该节点本身没有被删除。</div></pre></td></tr></table></figure>
-<h3 id="包裹节点"><a href="#包裹节点" class="headerlink" title="包裹节点"></a>包裹节点</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">  wrap()将所有匹配的元素进行单独的包裹,在原来的元素的外部实施包裹</div><div class="line">  wrapAll()将匹配的元素集合当做一个整体来包裹，在元素的外部实施包裹</div><div class="line">  wrapInner()经所有匹配的元素进行单独的包裹，在原来的元素额内部实施包裹</div><div class="line"></div><div class="line">详情请看：《一眼看破包裹节点的方法》    http://www.imooc.com/article/12193</div></pre></td></tr></table></figure>
-<h3 id="遍历节点"><a href="#遍历节点" class="headerlink" title="遍历节点"></a>遍历节点</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div></pre></td><td class="code"><pre><div class="line">1.往上遍历</div><div class="line">        1)parent() 方法返回被选元素的直接祖先元素，即父元素。</div><div class="line">        2)parents() 方法返回被选元素的所有祖先元素，它一路向上直到文档的根元素 (&lt;html&gt;)</div><div class="line">        3)parentsUntil() 方法返回介于两个给定元素之间的所有祖先元素。</div><div class="line">        4)closest()方法从元素本身开始，逐级向上级元素匹配，并返回最先匹配的祖先元素。</div><div class="line"></div><div class="line">2.往下遍历</div><div class="line">    1)children() 方法返回被选元素的所有直接后代元素，即子元素。（跟parent（）方向恰好相反，一个是往上找，一个是往下查）</div><div class="line">    2)find() 方法返回被选元素的后代元素，一路向下直到最后一个后代。（跟parents（）方向恰好相反）</div><div class="line"></div><div class="line">3.同级遍历</div><div class="line">    1)siblings() 方法返回被选元素的所有同辈元素。</div><div class="line">    2)next() 方法返回被选元素的下一个同辈元素。</div><div class="line">      nextAll() 方法返回被选元素的后面所有的同辈元素。</div><div class="line">	      nextUntil() 方法返回介于两个给定参数之间的所有的同辈元素。</div><div class="line">    3)prev(), prevAll() 以及 prevUntil() 方法的跟上面三个方法的原理是一样的（都是找同辈元素），但是方向恰好相反（next()/ nextAll()/nextUntil() 是往后找，而prev()/ prevAll() / prevUntil() 则是往前找）。</div><div class="line"></div><div class="line">4.过滤（相当于基本过滤选择器）</div><div class="line">    1)first() 方法返回被选元素的首个元素。</div><div class="line">      last() 方法返回被选元素的最后一个元素。</div><div class="line">	  eq() 方法返回被选元素中带有指定索引号的元素。</div><div class="line">    2)filter() 方法允许规定一个标准。不匹配这个标准的元素会被从集合中删除，匹配的元素会被返回。</div><div class="line">    3)not() 方法返回不匹配标准的所有元素。（not() 方法与 filter() 相反。）</div><div class="line"></div><div class="line">attentions:</div><div class="line">	1)此小节内容较多，容易混淆，可以结合我写过的另一篇文章来辅助理解：</div><div class="line">	《纯干货！一切关于jquery选择器 》    http://www.imooc.com/article/11319</div></pre></td></tr></table></figure>
-<h3 id="cssDOM"><a href="#cssDOM" class="headerlink" title="cssDOM"></a>cssDOM</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div></pre></td><td class="code"><pre><div class="line">1).在css()方法中，如果属性中带有“-”符号，例如font-size和background-color属性，如果在设置这些属性的值的时候不带引号，那么就要用驼峰命名法，例如：</div><div class="line">    $(&quot;p&quot;).css(&#123;	fontSize:&quot;30px&quot;,backgroundColor:&quot;#888888&quot;&#125;);</div><div class="line">如果带上了引号，既可以写成&quot;font-size&quot;,也可以写成“fontSize&quot;。</div><div class="line">总之，带上引号是一个好习惯。</div><div class="line"></div><div class="line">2).获取高度值用css()和height()的差别：</div><div class="line">css()方法获取的高度值与样式的设置有关，可能得到&quot;auto&quot;,也可能得到“10px”之类的字符串；而height()方法获取的高度值则是元素在页面中的实际高度，与样式的设置无关，并且不带单位</div><div class="line"></div><div class="line">3).css ()与addClass()设置样式的区别</div><div class="line">1）可维护性：addClass()优于css()</div><div class="line">2）灵活性：css()优于addClass()</div><div class="line">3）样式值:css()可以获取到指定的样式值，而addClass()无法获取指定的属性的值。</div><div class="line">4）样式优先级：css()的样式优先级高于addClass()。（理由：addClass()方法是通过增加class名的方式，那么这个样式是在外部文件或者内部样式中先定义好的，等到需要的时候附加到元素上；css()处理的是内联样式，直接通过元素的style属性附加到元素上）</div><div class="line">总结：两个方法各有利弊，一般是静态的结果，都确定了布局的规则，可以用addClass的方法，增加统一的类规则；如果是动态的HTML结构，在不确定规则，或者经常变化的情况下，一般多考虑css()方式。</div><div class="line"></div><div class="line">4).总结样式操作：</div><div class="line">js中：</div><div class="line">    1）通过类名：	element.className = theClassName或者element.setAttribute(&quot;class&quot;,theClassName)</div><div class="line">    	eg:	document.getElementById(&quot;p1&quot;).className = &quot;active&quot;;</div><div class="line">        	或document.getElementById(&quot;p1&quot;).setAttribute(&quot;class&quot;,&quot;active&quot;);</div><div class="line">    2）通过element.style</div><div class="line">    	eg:	document.getElementById(&quot;p1&quot;).style.color=&quot;blue&quot;;</div><div class="line"></div><div class="line">jquery中：</div><div class="line">    1）通过类名：	$(element).addClass(theClassName)或者$(element).attr(&quot;class&quot;,theClassName)</div><div class="line">    	eg:	$(&quot;p1&quot;).addClass(&quot;active&quot;);</div><div class="line">        	或$(&quot;p1&quot;).attr(&quot;class&quot;,&quot;active&quot;);</div><div class="line">    2）通过css()</div><div class="line">    	eg:	$(&quot;p1&quot;).css(&quot;color&quot;,&quot;blue&quot;);</div></pre></td></tr></table></figure>
-<h3 id="jQuery-尺寸"><a href="#jQuery-尺寸" class="headerlink" title="jQuery-尺寸"></a>jQuery-尺寸</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">- width()/height()方法设置或返回元素的宽度/高度（不包括内边距、边框或外边距）。</div><div class="line">- innerWidth()/innerHeight()方法返回元素的宽度/高度（包括内边距）。</div><div class="line">- outerWidth()/outerHeight()方法返回元素的宽度/高度（包括内边距和边框）。</div><div class="line">- outerWidth(true)/outerHeight(true)方法返回元素的宽度/高度（包括内边距、边框和外边距）。</div><div class="line"></div><div class="line">attentions:</div><div class="line">根据盒子模型，可知：</div><div class="line">- width()/height()获得的是盒子模型最内层（content)的宽、高</div><div class="line">- innerWidth()/innerHeight()获取的是盒子模型内两层(content、padding)的宽、高</div><div class="line">- outerWidth()/outerHeight()获取的是盒子模型内三层的(content、padding、border)宽、高</div><div class="line">- outerWidth(true)/outerHeight(true)获取的是盒子模型的整个盒子（content、padding、border、margin）的宽、高</div></pre></td></tr></table></figure>
-<h4 id="盒子模型图："><a href="#盒子模型图：" class="headerlink" title="盒子模型图："></a>盒子模型图：</h4><p><img src="http://img.mukewang.com/57b1b341000119d702200220.jpg" alt="盒子模型"></p>
-
-          
+          <p>No description provided.<br>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2016/12/16/纯干货！jQuery之DOM操作解析/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -959,6 +935,17 @@
 
                 
                 
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/前端开发/jQuery/" itemprop="url" rel="index">
+                    <span itemprop="name">jQuery</span>
+                  </a>
+                </span>
+
+                
+                
               
             </span>
           
@@ -990,123 +977,14 @@
 
       
         
-          
-            <blockquote>
-<p>版权声明，文章首发于本人慕课网账号：<a href="http://www.imooc.com/u/2529192/articles" target="_blank" rel="external">人生还有多少个二十年</a>，欢迎转载，转载请注明出处</p>
-</blockquote>
-<p>以下是个人对jQuery选择器的总结，内容并不详细，建议读者阅读时结合jQuery相关的参考文档或书籍，本文主要着眼于一些易错点，同时将一些选择器和方法联系起来，文中难免会有些错误，敬请批评指正。</p>
-<p>jQuery的选择器可以分为以下的四类：</p>
-<p>（一）    基本选择器</p>
-<pre><code>1.    ID选择器
-       eg:    $(“#nav”)选取ID为nav的元素
-
-2.    类选择器
-       eg:    $(“.fruit”)选取class为fruit 的元素
-3.    标签选择器
-    eg:    $(“p”)选取所有的p元素
-
-4.    通用选择器
-    eg:    $(“*”)选取所有的元素
-
-5.    群组选择器
-        eg:    $(“li,span.active”)选取所有li元素和class为active的span元素
-</code></pre><p>（二）    层次选择器</p>
-<pre><code>1.    子选择器$( &quot;parent &gt; child&quot; )：选取所有指定元素的直接后代元素，即子元素，可以用children()代替它。
-    eg:    $(“body&gt;div”)相当于$(“body”).children(“div”);
-
-2.    后代选择器$(&quot;ancestor descendant&quot;)：选取给定的祖先元素的所有后代元素，可以用find()代替它
-        eg:    $(“ul li”)相当于$(“ul”).find(“li);
-
-3.    相邻兄弟选择器$(&quot;prev + next&quot;)：选取所有紧接在“prev”元素后的“next”元素,可以用next()替代它。
-       eg :    $(“a+ul”)相当于$(“a”).next();
-    相邻兄弟选择器要满足三个条件：
-                1）它们必须是兄弟，即他们的父元素为同一个
-                2）next必须在prev后面
-                3）它们必须相邻
-
-4. 一般兄弟选择器 $(&quot;prev ~ siblings&quot;)，选取“prev”元素之后的所有兄弟元素,可以用nextAll()代替它。
-        eg :        $(“a~span”)相当于$(“a”).nextAll(&quot;span&quot;);
-   一般兄弟选择器两个条件：
-                1.它们必须是兄弟，即他们的父元素为同一个
-                2.siblings必须在prev后面
- Attentions:
-    1)siblings()可以跟同辈的元素匹配，无论位置的先后。
-        next()只能跟紧随其后的一个同辈元素匹配
-        nextAll()只能跟其后的同辈元素匹配
-    2)区分$(“ul.active”)和$(“ul .active”)
-        二者的差别在于空格，前者会被解析为“获取class为active的ul元素”，而后者则是“获取ul元素的后代元素中class为active的元素”
-</code></pre><p>（三）    过滤选择器</p>
-<pre><code>1.    基本过滤选择器
-    1）:first/:last
-    2):even/:odd/:eq()/:gt()/:lt()
-    3):not()
-    Attentions:
-    1.:first,:last,:eq()都只能选择一个元素
-    2.:even,:odd,:eq(),:gt(),:lt()都是靠索引来选择元素的，而且索引的起始值都为0，而:nth-child()的索引起始值为1。
-    以下举几个例子：
-                    （1）tr:even选取的是索引为偶数（0,2,4,6...）的行，即奇数行（第1,3,5,7...行）
-                    （2）div:eq(2)选取的是索引为2的div元素，即第3个div元素
-                    （3）span:lt(2)选取的是索引小于2的span元素，索引为0,1的元素，也就是说，选择的是第1个和第2个span
-    3. eq(0)相当于:first,eq(-1)相当于:last
-    4.  :first相当于.first()，:last相当于.last()，:eq()相当于.eq()，:not()相当于.not()
-2.    内容过滤选择器
-    $(&quot;:contains(text)&quot;)是根据元素所包含的文本来筛选的
-    $(&quot;:has(selector)&quot;)是根据元素所包含的选择器来筛选的
-    $(&quot;:parent&quot;)选择的是包含子元素或文本的元素
-    $(&quot;:empty&quot;)跟$(&quot;:parent&quot;)完全相反，选择的是既不包含子元素，又不包含文本的元素
-
-3.    可见性过滤选择器
-        :visible
-        :hidden
-    Attentions:
-        1)    如果元素占据文档一定的空间,则被认为是可见的，同理，不占空间则视为不可见。
-        2)    visibility为hidden， opacity为0的元素为可见
-
-4.    属性过滤选择器
-    [attribute]
-    [attribute=value]/[attribute!=value]
-    [attribute^=value]/[attribute$=value]
-    [attribute*=value]
-    [attrSel1][attrSel2][attrSelN]
-    [attribute=value]
-    [attribute~=value]
-
-    eg:    $(“[title]”)选中有title属性的元素        
-            $(“[title=’apple’]”)选中有title属性值为apple的元素
-            $(“[title!=’apple’]”)选中有title属性值不为apple的元素
-            $(“[title^=’a’]”)选中有title属性值以a开头的元素
-            $(“[title$=’a’]”)选中有title属性值以a结尾的元素
-            $(“[title*=’a’]”)选中有title属性值中含有a的元素
-            $(“[title][id][src]”)选中同时具有title，id和src属性的元素
-            $(“[title=’a’]”)选中有title属性值为a或者title属性值以a为前缀的元素
-            $(“[title~=’a’]”)选中title属性值用空格分隔的值中含有a的元素
-
-5.    子元素过滤选择器
-        :first-child/:last-child
-        :nth-child()/:nth-last-child()
-        :only-child
-
-     Attentions:
-   1）区分:nth-child(n) 与 :nth-last-child(n) 
-    前者是从前往后计算，后者从后往前计算
-   2）:first-child相当于nth-child(1),:last-child相当于nth-last-child(1)
-   3）所有的选择器都只能往后选，往下选，要实现往前选，往上选，则要利用一些现成的方法。eg :    parent(),closest()
-   4）区分:first/:first-child，:last/:last-child，:eq()/:nth-child()
-               这三对选择器的差别是类似的，下面就:eq()/:nth-child()做个说明：
-                :eq()的索引是以0开始的，并且只能选中一个元素，而:nth-child()的索引是以1开始的，并且能够选中多个元素。
-
-6.    表单对象属性过滤选择器
-    1):enables/:disabled
-    2):checked/:selected
-</code></pre><p>（四）    表单选择器</p>
-<pre><code>1.    :input选取所有的&lt;input&gt;、&lt;textarea&gt;、&lt;select&gt;、&lt;button&gt;元素
-2.    :text, :password , :radio , :checkbox , :submit , :image , :reset , :button , :file , :hidden 
-    Attentions:
-1).除了:input筛选选择器，几乎每个表单类别筛选器都对应一个input元素的type值。大部分表单类别筛选器可以使用属性筛选器替换。比如 $(&apos;:password&apos;) == $(&apos;[type=password]&apos;)
-2).区分$(“input”)和$(“:input”)
-        $(“input”)获取的是&lt;input&gt;元素，而:input选取所有的&lt;input&gt;、&lt;textarea&gt;、&lt;select&gt;、&lt;button&gt;元素
-</code></pre>
-          
+          <p>No description provided.<br>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2016/12/16/纯干货！一切关于jquery选择器/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -1214,6 +1092,17 @@
 
                 
                 
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/前端开发/jQuery/" itemprop="url" rel="index">
+                    <span itemprop="name">jQuery</span>
+                  </a>
+                </span>
+
+                
+                
               
             </span>
           
@@ -1245,17 +1134,14 @@
 
       
         
-          
-            <h2 id="直接看效果"><a href="#直接看效果" class="headerlink" title="直接看效果"></a>直接看效果</h2><p><img src="http://img.imooc.com/57b12dd0000128d606710279.jpg" alt="包裹节点"></p>
-<h2 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h2><ul>
-<li>wrap()将所有匹配的元素进行单独的包裹,在原来的元素的外部实施包裹</li>
-<li>wrapAll()将匹配的元素集合当做一个整体来包裹，在元素的外部实施包裹</li>
-<li>wrapInner()经所有匹配的元素进行单独的包裹，在原来的元素额内部实施包裹</li>
-</ul>
-<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div></pre></td><td class="code"><pre><div class="line">&lt;!doctype html&gt;</div><div class="line">&lt;html&gt;</div><div class="line">&lt;head&gt;</div><div class="line">&lt;meta charset=&quot;utf-8&quot;&gt;</div><div class="line">&lt;title&gt;让你一眼看破包裹节点的方法&lt;/title&gt;</div><div class="line">&lt;style&gt;</div><div class="line">*&#123;</div><div class="line">    margin:0;</div><div class="line">    padding:0;</div><div class="line">&#125;</div><div class="line">body&#123;</div><div class="line">    padding:10px;</div><div class="line">&#125;</div><div class="line">div&#123;</div><div class="line">    margin:8px;</div><div class="line">    padding:2px;</div><div class="line">    border:1px solid red;</div><div class="line">&#125;</div><div class="line">ul&#123;</div><div class="line">    width:100px;</div><div class="line">    list-style:none;</div><div class="line">    text-align:center;</div><div class="line">&#125;</div><div class="line">ul li&#123;	</div><div class="line">    padding:2px;</div><div class="line">    margin:4px;</div><div class="line">    background:#e8e8e8;</div><div class="line">    border:1px solid black;</div><div class="line">&#125;</div><div class="line">&lt;/style&gt;</div><div class="line">&lt;/head&gt;</div><div class="line"></div><div class="line">&lt;body&gt;</div><div class="line">    你喜欢的编程语言</div><div class="line">    &lt;ul id=&quot;ul1&quot;&gt;</div><div class="line">        &lt;li&gt;C&lt;/li&gt;</div><div class="line">        &lt;li&gt;Java&lt;/li&gt;</div><div class="line">        &lt;li&gt;Python&lt;/li&gt;</div><div class="line">        &lt;li&gt;C++&lt;/li&gt;</div><div class="line">    &lt;/ul&gt;</div><div class="line">    &lt;select&gt;</div><div class="line">        &lt;option&gt;	&lt;/option&gt;</div><div class="line">        &lt;option&gt;wrap&lt;/option&gt;</div><div class="line">        &lt;option&gt;wrapAll&lt;/option&gt;</div><div class="line">        &lt;option&gt;wrapInner&lt;/option&gt;</div><div class="line">    &lt;/select&gt;</div><div class="line">    &lt;!--</div><div class="line">    //用于验证在jquery3.0之前，wrapAll()通过回调函数可以实现和wrap()相同的功能</div><div class="line">    &lt;script src=&quot;https://code.jquery.com/jquery-2.2.4.js&quot; integrity=&quot;sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;--&gt;</div><div class="line">    &lt;script src=&quot;https://code.jquery.com/jquery-3.1.0.js&quot; integrity=&quot;sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk=&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;</div><div class="line">    </div><div class="line">    &lt;script&gt;</div><div class="line">    $(function()&#123;</div><div class="line">        $(&quot;select&quot;).change(function()&#123;</div><div class="line">            $(&quot;#ul1&quot;).html(&quot;&lt;ul id=&apos;ul1&apos;&gt;&lt;li&gt;C&lt;/li&gt;&lt;li&gt;Java&lt;/li&gt;&lt;li&gt;Python&lt;/li&gt;&lt;li&gt;C++&lt;/li&gt;&lt;/ul&gt;&quot;);//还原为初始状态</div><div class="line">            if($(&quot;option:selected&quot;).val().indexOf(&quot;wrap&quot;)!==-1)&#123;//如果选中项的值含有“wrap”字符（即选中的不是第一项）</div><div class="line">                    $(&quot;ul&quot;).find(&quot;li&quot;)[$(this).val()](&quot;&lt;div&gt;&lt;/div&gt;&quot;);</div><div class="line">            &#125;</div><div class="line">        &#125;);</div><div class="line">        //用于验证在jquery3.0之前，wrapAll()通过回调函数可以实现和wrap()相同的功能</div><div class="line">        //$(&quot;li&quot;).wrapAll(function()&#123;return &quot;&lt;div&gt;&lt;/div&gt;&quot;&#125;);</div><div class="line">    &#125;);</div><div class="line">    &lt;/script&gt;</div><div class="line">&lt;/body&gt;</div><div class="line">&lt;/html&gt;</div></pre></td></tr></table></figure>
-<h2 id="attentions"><a href="#attentions" class="headerlink" title="attentions"></a>attentions</h2><p>在jquery3.0之前，wrapAll()通过回调函数可以实现和wrap()相同的功能,上面的代码已经给出了验证的方法。我一直觉得那应该是个bug。wrapAll的原意就是“包裹所有”，用它实现每个匹配元素的单独的包裹显得有点古怪了。最近翻阅了jQuery官方文档后，发现jQuery3.0以上的版本已经修正了这个bug.</p>
-
-          
+          <p>No description provided.<br>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2016/08/15/让你一眼看破包裹节点的方法！/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -1363,6 +1249,17 @@
 
                 
                 
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/前端开发/JS/" itemprop="url" rel="index">
+                    <span itemprop="name">JS</span>
+                  </a>
+                </span>
+
+                
+                
               
             </span>
           
@@ -1394,13 +1291,14 @@
 
       
         
-          
-            <h2 id="直接看效果"><a href="#直接看效果" class="headerlink" title="直接看效果"></a>直接看效果</h2><p> <img src="http://img.mukewang.com/57ac391c00015f7608250225.jpg" alt="效果图"></p>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">1. jquery插入节点为什么会有8个方法？</div><div class="line">    一个标签由开始标签和结束标签组成，因为标签的前后、内外和表述方式的不同，而造就了8个方法。</div><div class="line">    eg://两句话理解“内外”的含义</div><div class="line">        1）教室的前面有一棵树            //外面的前面</div><div class="line">        2）教室的前面有一张讲台         //里面的前面	</div><div class="line">        //两句话理解“表述方式不同”的含义</div><div class="line">        1）给 我 钱               //这种表达方式，目标(target)在前，内容(content)在后</div><div class="line">        2）把 钱 给 我            //这种表达方式，内容(content)在前，目标(target)在后</div><div class="line">2. $(target).append(content)/$(content).appendTo(target) - 在被选元素的内部的结尾插入内容</div><div class="line">   $(target).prepend(content)/$(content).prependTo(target) - 在被选元素的内部的开头插入内容</div><div class="line">   $(target).after(content)/$(content).insertAfter(target) - 在被选元的素外部之后插入内容</div><div class="line">   $(target).before(content)/$(content).insertBefore(target) - 在被选元素的外部之前插入内容</div><div class="line"></div><div class="line">3. 插入节点的方法不仅能将新创建的DOM元素插入到文档中，也能对原有的DOM元素进行移动</div></pre></td></tr></table></figure>
-<h2 id="上代码"><a href="#上代码" class="headerlink" title="上代码"></a>上代码</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div></pre></td><td class="code"><pre><div class="line">&lt;!doctype html&gt;</div><div class="line">&lt;html&gt;</div><div class="line">&lt;head&gt;</div><div class="line">&lt;meta charset=&quot;utf-8&quot;&gt;</div><div class="line">&lt;title&gt;插入节点&lt;/title&gt;</div><div class="line">&lt;style type=&quot;text/css&quot;&gt;</div><div class="line">div&#123;</div><div class="line">	background:lightblue;</div><div class="line">	width:120px;</div><div class="line">	color:red;</div><div class="line">	padding:10px;&#125;</div><div class="line">img&#123;</div><div class="line">	display:block;</div><div class="line">	padding:10px;</div><div class="line">	background:#e8e8e8;</div><div class="line">	width:100px;</div><div class="line">	height:100px;</div><div class="line">&#125;</div><div class="line">&lt;/style&gt;</div><div class="line">&lt;/head&gt;</div><div class="line"></div><div class="line">&lt;body&gt;</div><div class="line">&lt;div&gt;知人者智&lt;/div&gt;</div><div class="line">&lt;select&gt;</div><div class="line">    &lt;option&gt;	&lt;/option&gt;&lt;!--选中此项则将页面还原为初始状态--&gt;</div><div class="line">    &lt;option&gt;append&lt;/option&gt;</div><div class="line">    &lt;option&gt;appendTo&lt;/option&gt;</div><div class="line">    &lt;option&gt;prepend&lt;/option&gt;</div><div class="line">    &lt;option&gt;prependTo&lt;/option&gt;</div><div class="line">    &lt;option&gt;after&lt;/option&gt;</div><div class="line">    &lt;option&gt;insertAfter&lt;/option&gt;</div><div class="line">    &lt;option&gt;before&lt;/option&gt;</div><div class="line">    &lt;option&gt;insertBefore&lt;/option&gt;</div><div class="line">&lt;/select&gt;</div><div class="line">&lt;script src=&quot;jquery/jquery-2.2.3.js&quot;&gt;&lt;/script&gt;&lt;!--路径记得用自己电脑的文件夹路径来代替--&gt;</div><div class="line">&lt;script&gt;</div><div class="line">$(function()&#123;</div><div class="line">	var $div = $(&quot;div&quot;),</div><div class="line">	    $addImg = $(&quot;&lt;p&gt;&lt;img src=&apos;images/t01ab7e06858b5f3e99.jpg&apos;&gt;&lt;/p&gt;&quot;),//自己找个图片，使用自己的图片路径</div><div class="line">	    $select = $(&quot;select&quot;);</div><div class="line">	// 如果以下这一段代码看不懂，可以使用附于最后含有switch语句的代码，两段选其一即可。		</div><div class="line">	$select.change(function()&#123;</div><div class="line">		var selectedVal = $select.find(&quot;option:selected&quot;).val();</div><div class="line">		if(selectedVal)&#123; // 如果选中的不是第一项（第一项为空字符串，将其转换为布尔值则为false）</div><div class="line">			if(selectedVal.length&lt;8)&#123; // 如果选中项的值的长度小于8，即选中的是（append、prepend、after、before）之一。</div><div class="line">				$div[selectedVal]($addImg);</div><div class="line">			&#125;else&#123; // 如果选中项的值的长度不小于8，即选中的是（appendTo、prependTo、insertAfter、insertBefore）之一。</div><div class="line">				$addImg[selectedVal]($div);</div><div class="line">			&#125;</div><div class="line">		&#125;</div><div class="line">		else&#123; // 选中第一项则将页面还原为初始状态</div><div class="line">			$div.html(&quot;知人者智&quot;).siblings(&quot;p&quot;).remove();</div><div class="line">		&#125;</div><div class="line">	&#125;);</div><div class="line">&#125;);</div><div class="line">&lt;/script&gt;</div><div class="line">&lt;/body&gt;</div><div class="line">&lt;/html&gt;</div></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div></pre></td><td class="code"><pre><div class="line">可做替补的代码段：</div><div class="line">	$select.change(function()&#123;</div><div class="line">		switch($select.find(&quot;option:selected&quot;).val())&#123;</div><div class="line">		case &quot;append&quot;:</div><div class="line">			$div.append($addImg);</div><div class="line">		break;</div><div class="line">		case &quot;appendTo&quot;:</div><div class="line">			$addImg.appendTo($div);</div><div class="line">		break;</div><div class="line">		case &quot;prepend&quot;:</div><div class="line">			$div.prepend($addImg);</div><div class="line">		break;</div><div class="line">		case &quot;appendTo&quot;:</div><div class="line">			$addImg.prependTo($div);</div><div class="line">		break;</div><div class="line">		case &quot;append&quot;:</div><div class="line">			$div.prependTo($addTxt);</div><div class="line">		break;</div><div class="line">		case &quot;appendTo&quot;:</div><div class="line">			$addImg.appendTo($div);</div><div class="line">		break;</div><div class="line">		case &quot;after&quot;:</div><div class="line">			$div.after($addImg);</div><div class="line">		break;</div><div class="line">		case &quot;insertAfter&quot;:</div><div class="line">			$addImg.insertAfter($div);</div><div class="line">		break;</div><div class="line">		case &quot;before&quot;:</div><div class="line">			$div.before($addImg);</div><div class="line">		break;</div><div class="line">		case &quot;insertBefore&quot;:</div><div class="line">			$addImg.insertBefore($div);</div><div class="line">		break;</div><div class="line">		default:</div><div class="line">			$div.html(&quot;知人者智&quot;).siblings(&quot;p&quot;).remove();</div><div class="line">		break;</div><div class="line">		&#125;</div><div class="line">	&#125;);</div></pre></td></tr></table></figure>
-
-          
+          <p>No description provided.<br>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2016/08/11/一眼看破插入节点的8个方法/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -1483,7 +1381,7 @@
             
               <a href="/archives/">
             
-                <span class="site-state-item-count">6</span>
+                <span class="site-state-item-count">7</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -1494,7 +1392,7 @@
             
             <div class="site-state-item site-state-categories">
               <a href="/categories/index.html">
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">5</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -1505,7 +1403,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-count">8</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
