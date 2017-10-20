@@ -95,18 +95,18 @@
 
 
 
-<meta name="description" content="No description provided.">
+<meta name="description" content="underscore.js集合、数组相关函数的一些联系与区别…">
 <meta name="keywords" content="JS,JS工具库">
 <meta property="og:type" content="article">
 <meta property="og:title" content="underscore.js小记录（集合、数组篇）">
 <meta property="og:url" content="https://zrc-struggling.github.io/2017/10/20/underscore.js小记录（集合、数组篇）/index.html">
 <meta property="og:site_name" content="人生还有多少个二十年">
-<meta property="og:description" content="No description provided.">
+<meta property="og:description" content="underscore.js集合、数组相关函数的一些联系与区别…">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-10-20T09:25:40.199Z">
+<meta property="og:updated_time" content="2017-10-20T10:55:56.896Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="underscore.js小记录（集合、数组篇）">
-<meta name="twitter:description" content="No description provided.">
+<meta name="twitter:description" content="underscore.js集合、数组相关函数的一些联系与区别…">
 
 
 
@@ -369,7 +369,7 @@
       
 
       
-        <p>No description provided.<br><a id="more"></a></p>
+        <p>underscore.js集合、数组相关函数的一些联系与区别…<br><a id="more"></a></p>
 <h2 id="集合-Collection-Functions"><a href="#集合-Collection-Functions" class="headerlink" title="集合(Collection Functions)"></a>集合(Collection Functions)</h2><ol>
 <li><p><em>.find()和</em>.filter()的联系和区别</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line">_.find(list, predicate, [context]) 别名： detect  </div><div class="line">_.filter(list, predicate, [context]) 别名： select </div><div class="line">_.reject(list, predicate, [context]) </div><div class="line">说明：_.find()返回第一个通过predicate真值检测的值，_.filter()则返回全部,</div><div class="line">而_.reject()则返回所有未通过predicate真值检测的值。</div><div class="line">eg:</div><div class="line">_.find([<span class="number">1</span>,<span class="number">4</span>,<span class="number">5</span>], <span class="function"><span class="keyword">function</span>(<span class="params">item</span>)</span>&#123;</div><div class="line">	<span class="keyword">return</span> item &gt; <span class="number">1</span>;</div><div class="line">&#125;);</div><div class="line"><span class="comment">// 4</span></div><div class="line">_.filter([<span class="number">1</span>,<span class="number">4</span>,<span class="number">5</span>], <span class="function"><span class="keyword">function</span>(<span class="params">item</span>)</span>&#123;</div><div class="line">	<span class="keyword">return</span> item &gt; <span class="number">1</span>;</div><div class="line">&#125;);</div><div class="line"><span class="comment">// [4, 5]</span></div><div class="line">_.filter([<span class="number">1</span>,<span class="number">4</span>,<span class="number">5</span>], <span class="function"><span class="keyword">function</span>(<span class="params">item</span>)</span>&#123;</div><div class="line">	<span class="keyword">return</span> item &gt; <span class="number">4</span>;</div><div class="line">&#125;);</div><div class="line"><span class="comment">// [5]</span></div><div class="line">_.reject([<span class="number">1</span>,<span class="number">4</span>,<span class="number">5</span>], <span class="function"><span class="keyword">function</span>(<span class="params">item</span>)</span>&#123;</div><div class="line">	<span class="keyword">return</span> item &gt; <span class="number">4</span>;</div><div class="line">&#125;);</div><div class="line"><span class="comment">// [1, 4]</span></div></pre></td></tr></table></figure>
